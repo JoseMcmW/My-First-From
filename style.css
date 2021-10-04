@@ -1,0 +1,87 @@
+header {
+    display: flex;
+    background: linear-gradient(to left, rgb(132, 0, 255), rgb(190, 141, 255));
+}
+
+.titulo-principal h1 {
+    color: white;
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 40px;
+    margin-left: 1em;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+margin-top: 3em;
+width: 50%;
+background-color: rgb(252, 188, 252);
+font-family: 'Encode Sans', sans-serif;
+border-radius: 20px;
+border: 1px black solid;
+}
+
+.titulo-formulario h2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 20px;
+}
+
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;    
+}
+
+ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+form li + li {
+    padding-top: 1em;
+}
+
+label {
+    display: inline-block;
+}
+
+.mod {
+    margin-left: 20px;
+    margin-top: 5px;
+    padding-top: 5px;
+    width: 300px;
+}
+
+input:focus, textarea:focus {
+    border-color: #000;
+}
+
+.no_compartiremos {
+    font-size: 12px;
+}
+.boton button{
+    background-color: blue;
+    color: #ffff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media(max-width:425px){
+    .container {
+        width: 100%;
+    }
+}
+
+@media(max-width:320px){
+    .mod {
+        width: 50%;
+    }
+    .ajuste {
+        display: flex;
+    }    
+}
+

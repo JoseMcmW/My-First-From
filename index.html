@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--Link para dar estilo de fuenta con google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap" rel="stylesheet">
+    <!--Se coloco el favicon con favigen-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    
+    <title>Document</title>
+</head>
+<body>
+    <Header class="titulo-principal">
+        <h1>Mundo Geek</h1>
+    </Header>
+    <section class="container">
+        <div class="titulo-formulario">
+            <h2>Inscripción al primer congreso Nerd de programadores</h2>
+        </div><!--Form etiqueta para hacer formulario-->
+        <form action="https://submit-form.com/xSBo5tD6"><!--https://submit-form.com/xSBo5tD6 lo da formspark para que te envie el formulario-->
+            <ul><!--Le doy Class "mod" a input Nombre, Correo Pais y Mensaje para poder aumentar tamaño de caja sin que explote lo demas-->
+                <li>
+                    <label for="name">Nombre y Apellido</label><br>
+                    <input class="mod" type="text" id="name" name="user_name">
+                </li>
+                <li>
+                    <!--Atributo Placeholder se usa para indicar con un ejemplo como llenar esta casilla-->
+                    <label for="mail">Correo electrónico</label><br>
+                    <input class="mod" type="email" placeholder="xxxxxxx@mundogeek.com" id="mail" name="user_mail"> 
+                </li>
+                <div><p class="no_compartiremos">No compartiremos esta información con nadie</p></div>
+                <li>
+                    <!--Lista dropdown para seleccionar entre varias opciones-->
+                    <label for="country">País</label><br>
+                    <select class="mod" id="country" name="country">
+                      <option value="argentina">Argetina</option>
+                      <option value="brasil">Brasil</option>
+                      <option value="chile">Chile</option>
+                      <option value="venezuela">Venezuela</option>
+                    </select>
+                </li>
+                <!--Se puede abrir un div dentro deuna lista?-->
+                <div class="lenguaje"><p>¿Que lenguaje conoces?</p></div>
+                <li class="ajuste">
+                    <!--Check box para capturar datos mediante una seleccion o click, casilla cuadrada-->
+                    <label><input type="checkbox" id="cbox1" value="first_checkbox"> Rubi</label>
+                    <input type="checkbox" id="cbox2" value="third_checkbox"> <label for="cbox2">PHP</label>
+                    <input type="checkbox" id="cbox3" value="fourth_checkbox"> <label for="cbox3">C++</label>
+                    <input type="checkbox" id="cbox4" value="fifth_checkbox"> <label for="cbox4">SQL</label>
+                    <input type="checkbox" id="cbox5" value="sixth_checkbox"> <label for="cbox5">Ninguno</label>
+                </li>
+                <div class="numero-binario"><p>Indica un número binario que te guste:</p></div>
+                <li>
+                    <!--input radio para cepturar valores pero es redonda la casilla-->
+                    <input type="radio" id="1" name="numero-binario" value="1">
+                    <label for="1">1</label><br>
+                    <input type="radio" id="2" name="numero-binario" value="2">
+                    <label for="2">2</label><br>
+                </li>
+                <li>
+                    <!--Para abrir una casilla que sirve para dejar comentarios-->
+                    <label for="msg">Dejanos tu opinión</label><br>
+                    <textarea class="mod" id="msg" name="use-name" rows="5"></textarea>
+                </li>
+                <li class="boton">
+                    <button type="submit">Submit</button>
+                </li>
+            </ul>
+        </form>
+    </section>
+</body>
+</html>
